@@ -63,11 +63,11 @@ const Nav = () => {
         <li>
           {/* end로 상위 메뉴의 디자인과 겹칠때 끊어주기 위해 사용한다. relative는 상대 주소를 바꿔준다.*/}
           <NavLink to="product-detail" relative={true} >product-detail</NavLink>
-          &nbsp;
-          &nbsp;
-          &nbsp;
+        </li>
+        <li>
           <NavLink to="reviews">reviews</NavLink>
         </li>
+        
       </ul>
     </nav>
   )
