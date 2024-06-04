@@ -21,13 +21,19 @@ import {DarkThemeContext} from '../context/DarkThemeContext.js'
 // }
 
 // 3.
-const Home = ({children}) => {
-  const { isDark } = useContext(DarkThemeContext); // {isDark, setIsDark} 객체로 가져온다.
+// const Home = ({children}) => {
+//   const { isDark } = useContext(DarkThemeContext); // {isDark, setIsDark} 객체로 가져온다.
+//   return (
+//     <div style={{
+//       backgroundColor : isDark ? "black" : "white", 
+//       color : isDark ? "white" : "black" 
+//     }}>{children}</div>
+//   )
+// }
+
+const Home = () =>{
   return (
-    <div style={{
-      backgroundColor : isDark ? "black" : "white", 
-      color : isDark ? "white" : "black" 
-    }}>{children}</div>
+    <section>home</section>
   )
 }
 

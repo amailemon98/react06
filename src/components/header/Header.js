@@ -1,19 +1,20 @@
 import React, {useContext} from 'react'
-import {DarkTheme} from '../index.js'
+import {DarkTheme, Nav} from '../index.js'
 import {DarkThemeContext} from '../../context/DarkThemeContext'
+import style from './Header.module.css'
 
 const Header = () => {
   const { isDark } = useContext(DarkThemeContext);
   return (
-    <div style={{
+    <header style={{
       backgroundColor : isDark ? "black" : "white", 
       color : isDark ? "white" : "black" 
     }}>
 
-      <h1>Header</h1>
-      {/* <DarkTheme isDark={isDark} setIsDark={setIsDark} /> */}
+      <h1>logo</h1>
+      <Nav />
       <DarkTheme />
-    </div>
+    </header>
   )
 }
 

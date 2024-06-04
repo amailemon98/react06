@@ -4,11 +4,12 @@ import Acc from '../components/Accordion/Acc'
 
 const About = () => {
   return (
-    <div>
-      <Tabs />
+    <section>
+      {/* <Tabs />
       <Acc />
-      <Acc />
-    </div>
+      <Acc /> */}
+      about
+    </section>
   )
 }
 
