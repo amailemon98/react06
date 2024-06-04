@@ -15,3 +15,5 @@ export const CounterContextProvider = ({children}) => {
 export const useCounterContext = () => {
     return useContext(CounterContext);
 }
+
+//리액트가 프로그래밍 하는 모양 = 프로그래밍 패턴

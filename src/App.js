@@ -5,6 +5,8 @@ import {About, Home} from './routes/index.js'
 import AppLayout from './layouts/AppLayout.js';
 // import DarkThemeContext from './context/DarkThemeContext.js';
 import { DarkThemeContextProvider } from './context/DarkThemeContext.js';
+import StarRatingLayer from './components/StarRating/StarRatingLayer.js';
+import SidebarLayer from './components/Sidebar/SidebarLayer.js';
 
 // 이전작업 백업(props 방법 사용)
 // props.children
@@ -58,12 +60,8 @@ function App() {
     <DarkThemeContextProvider>
       <AppLayout>
         <Header />
-        <About />
-        <Home>
-          <h1> 사과는 </h1>
-          <p> 새빨간 </p>
-          <div> 색입니다. </div>
-        </Home>
+        <StarRatingLayer />
+        <SidebarLayer />
         <Footer />
       </AppLayout>
     </DarkThemeContextProvider>
