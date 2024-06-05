@@ -1,8 +1,15 @@
 import React from 'react'
+import { Link, useParams } from 'react-router-dom'
 
 const ProductDetail = () => {
+  const {id} = useParams();
   return (
-    <div>ProductDetail</div>
+    <div>
+      <h2>ProductDetail</h2>
+
+      <Link to=".." >뒤로가기</Link>
+      {/* <Link to=".." relative='path'>뒤로가기</Link> */}
+    </div>
   )
 }
 

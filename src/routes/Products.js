@@ -1,11 +1,15 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet, NavLink } from 'react-router-dom'
 
 const Products = () => {
   return (
-    <section>Products
-
-      {/* Outlet은 children의 역할을 한다. */}
+    <section>
+      <h2>Products</h2>
+      <ul>
+        <li><NavLink to="/products/1">products 1</NavLink></li>
+        <li><NavLink to="/products/2">products 2</NavLink></li>
+        <li><NavLink to="/products/3">products 3</NavLink></li>
+      </ul>
       <Outlet />
     </section>
   )

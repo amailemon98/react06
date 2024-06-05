@@ -48,27 +48,11 @@ const Nav = () => {
           menu.map((item, index) => (
               <li>
                   <NavLink to={`${item}`} onClick={ () => {setMenuNum(index)}}
-                        // className={menuNum === index ? style.active : null}
-                        // 자동으로 active 되려면 클래스명이 무조건 active이어야 함
-
-                        // className={ ({isActive}) => isActive ? "bgcolor" : null }
-                        // style = { ( {isActive} ) => isActive ? {background : "red"} : {background :"white"} }
                   >{item}</NavLink>
               </li>
           ))
         }
-      </ul>
-
-      <ul>
-        <li>
-          {/* end로 상위 메뉴의 디자인과 겹칠때 끊어주기 위해 사용한다. relative는 상대 주소를 바꿔준다.*/}
-          <NavLink to="product-detail" relative={true} >product-detail</NavLink>
-        </li>
-        <li>
-          <NavLink to="reviews">reviews</NavLink>
-        </li>
-        
-      </ul>
+      </ul>        
     </nav>
   )
 }
